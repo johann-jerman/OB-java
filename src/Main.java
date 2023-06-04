@@ -2,16 +2,14 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        int integer = 1;
-        long longest = 2;
-        double doble= 2.22;
-        Boolean boleano = true;
-        String string = "name";
-        System.out.println(integer);
-        System.out.println(longest);
-        System.out.println(doble);
-        System.out.println(boleano);
-        System.out.println(string);
+        int num = ivaCalculate(100);
+        System.out.println(num);
 
+    }
+
+    public static int ivaCalculate(int numbreToCalc){
+        int iva = numbreToCalc * 21 / 100;
+        int finalNumber = iva + numbreToCalc;
+        return finalNumber;
     }
 }
